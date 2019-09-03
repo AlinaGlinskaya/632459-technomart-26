@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алина Глинская](https://up.htmlacademy.ru/htmlcss/26/user/632459).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Шершнев] (https://htmlacademy.ru/profile/shv_sergey)
 
 ---
 
