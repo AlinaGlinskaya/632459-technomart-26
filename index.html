@@ -9,12 +9,17 @@
 <body>
   <header>
     <section>
-      <h2>Логотип «Техномарт» и кнопки</h2>
+      <h2 class="visually-hidden">Логотип «Техномарт» и кнопки</h2>
       <a>
         <img src="img/content/logo-technomart.svg" width="137" height="22" alt="Логотип магазина «Техномарт»"></a>
 
       <ul>
-        <li><button type="button">Поиск</button></li>
+        <li>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label for="search-field">Поиск</label>
+            <input type="search" name="search" id="search-field">
+          </form>
+        </li>
         <li><button type="button">Закладки</button></li>
         <li><button type="button">Корзина</button></li>
         <li><button type="button">Оформить заказ</button></li>
@@ -22,7 +27,7 @@
     </section>
 
     <section>
-      <h2>Информация о магазине</h2>
+      <h2 class="visually-hidden">Информация о магазине</h2>
       <p>
         Интернет-магазин<br>
         строительных материалов<br>
@@ -30,7 +35,7 @@
       </p>
 
       <div>
-        <button type="button">+7(812)555-05-55</button>
+        <button type="button" aria-label="Номер телефона">+7(812)555-05-55</button>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
 
@@ -41,7 +46,7 @@
     </section>
 
     <section>
-      <h2>Навигация по сайту</h2>
+      <h2 class="visually-hidden">Навигация по сайту</h2>
 
       <nav>
         <ul>
@@ -64,7 +69,7 @@
     <h1>Интернет-магазин строительных материалов и инструментов «Техномарт»</h1>
 
     <section>
-      <h2>Промо-блок</h2>
+      <h2 class="visually-hidden">Промо-блок</h2>
 
       <section>
         <h3>Материалы</h3>
@@ -89,7 +94,7 @@
 
 
       <article>
-        <h2>Слайдер</h2>
+        <h2 class="visually-hidden">Слайдер</h2>
         <!--Слайдер-->
         <div>
           <h3>Дрели</h3>
@@ -206,7 +211,7 @@
       </ul>
 
       <!--слайдер-->
-      <div>
+      <section>
         <h3>Доставка</h3>
         <p>
           Мы с удовольствием доставим ваш товар прямо
@@ -214,9 +219,9 @@
           Ведь мы неплохо заработаем,
           поднимая его на ваш этаж!
         </p>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h3>Гарантия</h3>
         <p>
           Если купленный у нас товар поломается или заискрит,
@@ -227,16 +232,16 @@
         <p>
           Дом уж восстановите как-нибудь сами.
         </p>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h3>Кредит</h3>
         <p>
           Залезать в долговую яму стало проще!
           Кредитные консультанты придут вам на помощь.
         </p>
         <button type="button">Отправить заявку</button>
-      </div>
+      </section>
     </section>
 
     <section>
@@ -305,9 +310,9 @@
 
     <div>
       <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a></li>
+        <li><a href="#" aria-label="Техномарт в Фейсбуке">Фейсбук</a></li>
+        <li><a href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a></li>
       </ul>
     </div>
 
@@ -321,6 +326,33 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
     </p>
   </footer>
+
+  <section>
+    <h2 class="visually-hidden">«Техномарт» на карте</h2>
+    <img src="img/content/map.png" width="940" height="446"
+      alt="Офис магазина по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    <button type="button" aria-label="Закрыть">X</button>
+  </section>
+
+  <section>
+    <h2 class="visually-hidden">Написать в «Техномарт»</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="text" name="email" id="email-field" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="message-field">Текст письма:</label>
+        <textarea name="message" id="message-field">В свободной форме
+        </textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
