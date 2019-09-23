@@ -4,63 +4,68 @@
 <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" 
+    rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <section>
+    <header class="main-header">
+        <section class="header-buttons">
             <h2 class="visually-hidden">Логотип «Техномарт» и кнопки</h2>
-            <a href="index.html">
+            <a class="main-header-logo" href="index.html">
                 <img src="img/content/logo-technomart.svg" width="137" height="22"
                     alt="Логотип магазина «Техномарт»"></a>
 
             <ul>
-                <li>
-                    <form action="https://echo.htmlacademy.ru" method="get">
+                <li class="button button-search">
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                         <label for="search-field">Поиск</label>
-                        <input type="search" name="search" id="search-field">
+                        <input class="search-input" type="search" name="search" id="search-field">
                     </form>
                 </li>
-                <li><button type="button">Закладки</button></li>
-                <li><button type="button">Корзина</button></li>
-                <li><button type="button">Оформить заказ</button></li>
+                <li class="button button-marks"><button type="button">Закладки</button></li>
+                <li class="button button-basket"><button type="button">Корзина</button></li>
+                <li class="button button-order"><button type="button">Оформить заказ</button></li>
             </ul>
         </section>
 
-        <section>
+        <div class="header-content">
+        <section class="header-info">
             <h2 class="visually-hidden">Информация о магазине</h2>
 
-            <p>
+            <p class="header-text">
                 Интернет-магазин<br>
                 строительных материалов<br>
                 и инструментов для ремонта
             </p>
 
-            <div>
-                <button type="button" aria-label="Номер телефона">+7(812)555-05-55</button>
+            <div class="header-contacts">
+                <button class="phone-button" type="button" aria-label="Номер телефона">+7(812)555-05-55</button>
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
 
-            <div>
-                <a href="login.html" aria-label="Профайл">Равшан Джамшутович</a>
-                <button type="button">
+            <div class="autorised">
+                <a class="login-user" href="login.html" aria-label="Профайл">Равшан Джамшутович</a>
+                <button class="login-exit" type="button">
                     Выйти</button>
-                <ul>
+                <ul class="login-list">
                     <li>
-                        <a href="#">Мои заказы</a>
+                        <a class="login-list-item" href="#">Мои заказы</a>
                     </li>
                     <li>
-                        <a href="#">Личный кабинет</a>
+                        <a class="login-list-item" href="#">Личный кабинет</a>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section>
+        <section class="main-nav">
             <h2 class="visually-hidden">Навигация по сайту</h2>
 
             <nav>
-                <ul>
+                <ul class="site-navigation">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="company.html">Компания</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
@@ -72,20 +77,23 @@
 
             </nav>
         </section>
+        </div>
 
     </header>
 
     <main>
 
-        <ul>
+        <ul class="breadcrumbs">
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Инструмент</a></li>
             <li>Перфораторы</li>
         </ul>
 
-        <h1>Перфораторы</h1>
+        <div class="catalog-title">
+            <h1>Перфораторы</h1>
+            </div>
 
-        <section>
+        <section class="filter">
             <h2>Фильтр товаров:</h2>
             <form action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=pricecount.value">
                 <label for="pricecount">Цена:</label>
@@ -94,7 +102,7 @@
 
                 <fieldset>
                     <legend>Производители:</legend>
-                    <ul>
+                    <ul class="producers">
                         <li>
                             <input type="checkbox" name="bosch" id="filter-bosch" checked>
                             <label for="filter-bosch">Bosch</label>
@@ -120,7 +128,7 @@
 
                 <fieldset>
                     <legend>Питание:</legend>
-                    <ul>
+                    <ul class="power">
                         <li>
                             <input type="radio" name="power-group" value="battery" id="filter-battery" checked>
                             <label for="filter-battery">Аккумуляторные</label>
@@ -132,13 +140,13 @@
                     </ul>
 
                 </fieldset>
-                <button type="submit">Показать</button>
+                <button class="filter-button" type="submit">Показать</button>
 
             </form>
         </section>
 
         <section>
-            
+
             <h2>Сортировка:</h2>
             <ul>
                 <li>
@@ -162,7 +170,7 @@
         <section>
             <h2 class="visually-hidden">Список моделей перфораторов</h2>
 
-            <ul>
+            <ul class="models">
                 <li>
                     <h3>Перфоратор Bosch BFG 3000</h3>
                     <p>
@@ -283,15 +291,16 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
+        <div class="footer-top">
         <img src="img/content/logo-technomart.svg" width="137" height="22" alt="Логотип магазина «Техномарт»">
 
-        <p>
+        <p class="main-footer-contacts">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7(812)555-05-55
         </p>
 
-        <ul>
+        <ul class="footer-nav footer-nav-1">
             <li><a href="company.html">Компания</a></li>
             <li><a href="news.html">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -299,34 +308,38 @@
             <li><a href="contacts.html">Контакты</a></li>
         </ul>
 
-        <ul>
+        <ul class="footer-nav footer-nav-2">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
             <li><a href="#">Инструмент</a></li>
             <li><a href="special.html">Спецпредложения</a></li>
         </ul>
+        </div>
 
-        <p>
+        <div class="footer-bottom">
+
+        <p class="footer-copyright">
             © 2010-2017 Компания «Техномарт»<br>
             Все права защищены
         </p>
-        <div>
+        <div class="footer-social">
             <ul>
-                <li><a href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a></li>
-                <li><a href="#" aria-label="Техномарт в Фейсбуке">Фейсбук</a></li>
-                <li><a href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a></li>
+                <li><a class="social-button" href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a></li>
+                <li><a class="social-button" href="#" aria-label="Техномарт в Фейсбуке">Фейсбук</a></li>
+                <li><a class="social-button" href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a></li>
             </ul>
         </div>
 
-        <p>
+        <p class="feedback">
             Обратная связь:
-            <a href="#">mail@htmlacademy.ru</a>
+            <a class="footer-link" href="#">mail@htmlacademy.ru</a>
         </p>
 
-        <p>
+        <p class="developer">
             Разработано —
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
+        </div>
     </footer>
 
     <section>
