@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" 
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -31,52 +31,52 @@
             </ul>
         </section>
 
-        <div class="header-content">
-        <section class="header-info">
-            <h2 class="visually-hidden">Информация о магазине</h2>
+        <div class="company-info">
+            <section class="header-info">
+                <h2 class="visually-hidden">Информация о магазине</h2>
 
-            <p class="header-text">
-                Интернет-магазин<br>
-                строительных материалов<br>
-                и инструментов для ремонта
-            </p>
+                <p class="company-description">
+                    Интернет-магазин<br>
+                    строительных материалов<br>
+                    и инструментов для ремонта
+                </p>
 
-            <div class="header-contacts">
-                <button class="phone-button" type="button" aria-label="Номер телефона">+7(812)555-05-55</button>
-                <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            </div>
+                <div class="header-contacts">
+                    <button class="phone-button" type="button" aria-label="Номер телефона">+7(812)555-05-55</button>
+                    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                </div>
 
-            <div class="autorised">
-                <a class="login-user" href="login.html" aria-label="Профайл">Равшан Джамшутович</a>
-                <button class="login-exit" type="button">
-                    Выйти</button>
-                <ul class="login-list">
-                    <li>
-                        <a class="login-list-item" href="#">Мои заказы</a>
-                    </li>
-                    <li>
-                        <a class="login-list-item" href="#">Личный кабинет</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <div class="autorised">
+                    <a class="login-user" href="login.html" aria-label="Профайл">Равшан Джамшутович</a>
+                    <button class="login-exit" type="button">
+                        Выйти</button>
+                    <ul class="login-list">
+                        <li>
+                            <a class="login-list-item" href="#">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a class="login-list-item" href="#">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-        <section class="main-nav">
-            <h2 class="visually-hidden">Навигация по сайту</h2>
+            <section class="main-nav">
+                <h2 class="visually-hidden">Навигация по сайту</h2>
 
-            <nav>
-                <ul class="site-navigation">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="company.html">Компания</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="news.html">Новости</a></li>
-                    <li><a href="special.html">Спецпредложения</a></li>
-                    <li><a href="delivery.html">Доставка</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
+                <nav>
+                    <ul class="site-navigation">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="company.html">Компания</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="special.html">Спецпредложения</a></li>
+                        <li><a href="delivery.html">Доставка</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
 
-            </nav>
-        </section>
+                </nav>
+            </section>
         </div>
 
     </header>
@@ -91,7 +91,7 @@
 
         <div class="catalog-title">
             <h1>Перфораторы</h1>
-            </div>
+        </div>
 
         <section class="filter">
             <h2>Фильтр товаров:</h2>
@@ -145,24 +145,24 @@
             </form>
         </section>
 
-        <section>
+        <section class="sorting">
 
             <h2>Сортировка:</h2>
             <ul>
                 <li>
-                    <button type="button">По цене</button>
+                    <button class="sorting-btn" type="button">По цене</button>
                 </li>
                 <li>
-                    <button type="button">По типу</button>
+                    <button class="sorting-btn" type="button">По типу</button>
                 </li>
                 <li>
-                    <button type="button">По функционалу</button>
+                    <button class="sorting-btn" type="button">По функционалу</button>
                 </li>
                 <li>
-                    <button type="button">По возрастанию</button>
+                    <button class="sorting-btn sorting-btn-pointer" type="button">По возрастанию</button>
                 </li>
                 <li>
-                    <button type="button">По убыванию</button>
+                    <button class="sorting-btn sorting-btn-pointer" type="button">По убыванию</button>
                 </li>
             </ul>
         </section>
@@ -268,15 +268,15 @@
 
 
             </ul>
-            <ul>
-                <li><a>1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">Следующая</a></li>
+            <ul class="pagination">
+                <li class="pagination-current"><a>1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">Следующая</a></li>
             </ul>
         </section>
 
-        <section>
+        <section class="product-info">
             <h2>Пара слов о перфораторах</h2>
             <p>
                 Перфоратор — универсальный строительный инструмент. Предназначен
@@ -293,56 +293,56 @@
 
     <footer class="main-footer">
         <div class="footer-top">
-        <img src="img/content/logo-technomart.svg" width="137" height="22" alt="Логотип магазина «Техномарт»">
+            <img src="img/content/logo-technomart.svg" width="137" height="22" alt="Логотип магазина «Техномарт»">
 
-        <p class="main-footer-contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7(812)555-05-55
-        </p>
+            <p class="main-footer-contacts">
+                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                +7(812)555-05-55
+            </p>
 
-        <ul class="footer-nav footer-nav-1">
-            <li><a href="company.html">Компания</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+            <ul class="footer-nav footer-nav-top">
+                <li><a href="company.html">Компания</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
 
-        <ul class="footer-nav footer-nav-2">
-            <li><a href="#">Материалы</a></li>
-            <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструмент</a></li>
-            <li><a href="special.html">Спецпредложения</a></li>
-        </ul>
+            <ul class="footer-nav footer-nav-bottom">
+                <li><a href="#">Материалы</a></li>
+                <li><a href="#">Техника</a></li>
+                <li><a href="#">Инструмент</a></li>
+                <li><a href="special.html">Спецпредложения</a></li>
+            </ul>
         </div>
 
         <div class="footer-bottom">
 
-        <p class="footer-copyright">
-            © 2010-2017 Компания «Техномарт»<br>
-            Все права защищены
-        </p>
-        <div class="footer-social">
-            <ul>
-                <li><a class="social-button" href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a></li>
-                <li><a class="social-button" href="#" aria-label="Техномарт в Фейсбуке">Фейсбук</a></li>
-                <li><a class="social-button" href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a></li>
-            </ul>
-        </div>
+            <p class="footer-copyright">
+                © 2010-2017 Компания «Техномарт»<br>
+                Все права защищены
+            </p>
+            <div class="footer-social">
+                <ul>
+                    <li><a class="social-button" href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a></li>
+                    <li><a class="social-button" href="#" aria-label="Техномарт в Фейсбуке">Фейсбук</a></li>
+                    <li><a class="social-button" href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a></li>
+                </ul>
+            </div>
 
-        <p class="feedback">
-            Обратная связь:
-            <a class="footer-link" href="#">mail@htmlacademy.ru</a>
-        </p>
+            <p class="feedback">
+                Обратная связь:
+                <a class="footer-link" href="#">mail@htmlacademy.ru</a>
+            </p>
 
-        <p class="developer">
-            Разработано —
-            <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </p>
+            <p class="developer">
+                Разработано —
+                <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
         </div>
     </footer>
 
-    <section>
+    <section class="modal modal-basket">
         <h2 class="visually-hidden">Добавление товара в корзину</h2>
         <p>
             Товар добавлен в корзину!
