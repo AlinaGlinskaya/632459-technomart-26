@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" 
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -30,10 +30,10 @@
       </ul>
     </section>
 
-    <div class="header-content">
+    <div class="company-info">
       <section class="header-info">
         <h2 class="visually-hidden">Информация о магазине</h2>
-        <p class="header-text">
+        <p class="company-description">
           Интернет-магазин<br>
           строительных материалов<br>
           и инструментов для ремонта
@@ -74,32 +74,32 @@
   <main>
     <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов «Техномарт»</h1>
 
-    <section>
+    <section class="promo">
       <h2 class="visually-hidden">Промо-блок</h2>
 
-      <section>
+      <section class="promo-item">
         <h3>Материалы</h3>
         <a href="#">На любой вкус</a>
       </section>
-      <section>
+      <section class="promo-item">
         <h3>Инструмент</h3>
         <a href="#">На все случаи</a>
       </section>
-      <section>
+      <section class="promo-item">
         <h3>Техника</h3>
         <a href="#">Для стройки</a>
       </section>
-      <section>
+      <section class="promo-item">
         <h3>Скидки 50%</h3>
         <a href="#">На 350 товаров</a>
       </section>
-      <section>
+      <section class="promo-item">
         <h3>Доставка</h3>
         <a href="#">Бесплатно</a>
       </section>
 
 
-      <article>
+      <article class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <!--Слайдер-->
         <div>
@@ -119,9 +119,11 @@
       </article>
     </section>
 
-    <section>
-      <h2>Популярные товары</h2>
-      <a href="#">Все популярные товары</a>
+    <section class="popular-items">
+      <div class="title">
+        <h2>Популярные товары</h2>
+        <a class="button" href="#">Все популярные товары</a>
+      </div>
       <ul>
         <li>
           <h3>Перфоратор Bosch BFG 9000</h3>
@@ -165,9 +167,11 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Популярные производители</h2>
-      <a class="button" href="#">Все производители</a>
+    <section class="popular-producers">
+      <div class="title">
+        <h2>Популярные производители</h2>
+        <a class="button" href="#">Все производители</a>
+      </div>
       <ul>
         <li><a href="#">
             <img src="img/content/bosch.png" width="126" height="37" alt="Bosch">
@@ -210,14 +214,14 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
 
-      <ul>
-        <li><button type="button">Доставка</button></li>
-        <li><button type="button">Гарантия</button></li>
-        <li><button type="button">Кредит</button></li>
+      <ul class="service-list">
+        <li><button class="service-item" type="button">Доставка</button></li>
+        <li><button class="service-item" type="button">Гарантия</button></li>
+        <li><button class="service-item" type="button">Кредит</button></li>
       </ul>
 
       <!--слайдер-->
-      <section>
+      <section class="delivery">
         <h3>Доставка</h3>
         <p>
           Мы с удовольствием доставим ваш товар прямо
@@ -227,7 +231,7 @@
         </p>
       </section>
 
-      <section>
+      <section class="garanty">
         <h3>Гарантия</h3>
         <p>
           Если купленный у нас товар поломается или заискрит,
@@ -240,7 +244,7 @@
         </p>
       </section>
 
-      <section>
+      <section class="credit">
         <h3>Кредит</h3>
         <p>
           Залезать в долговую яму стало проще!
@@ -289,65 +293,65 @@
 
   <footer class="main-footer">
     <div class="footer-top">
-    <img src="img/content/logo-technomart.svg" width="137" height="22" alt="Логотип магазина «Техномарт»">
+      <img src="img/content/logo-technomart.svg" width="137" height="22" alt="Логотип магазина «Техномарт»">
 
-    <p class="main-footer-contacts">
-      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-      +7(812)555-05-55
-    </p>
+      <p class="main-footer-contacts">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        +7(812)555-05-55
+      </p>
 
-    <ul class="footer-nav footer-nav-1">
-      <li><a href="company.html">Компания</a></li>
-      <li><a href="news.html">Новости</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="delivery.html">Доставка</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
+      <ul class="footer-nav footer-nav-top">
+        <li><a href="company.html">Компания</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
 
-    <ul class="footer-nav footer-nav-2">
-      <li><a href="#">Материалы</a></li>
-      <li><a href="#">Техника</a></li>
-      <li><a href="#">Инструмент</a></li>
-      <li><a href="special.html">Спецпредложения</a></li>
-    </ul>
+      <ul class="footer-nav footer-nav-bottom">
+        <li><a href="#">Материалы</a></li>
+        <li><a href="#">Техника</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="special.html">Спецпредложения</a></li>
+      </ul>
     </div>
 
     <div class="footer-bottom">
 
-    <p class="footer-copyright">
-      © 2010-2017 Компания «Техномарт»<br>
-      Все права защищены
-    </p>
+      <p class="footer-copyright">
+        © 2010-2017 Компания «Техномарт»<br>
+        Все права защищены
+      </p>
 
-    <div class="footer-social">
-      <ul>
-        <li><a class="social-button" href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a></li>
-        <li><a class="social-button" href="#" aria-label="Техномарт в Фейсбуке">Фейсбук</a></li>
-        <li><a class="social-button" href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a></li>
-      </ul>
-    </div>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#" aria-label="Техномарт во Вконтакте">Вконтакте</a></li>
+          <li><a class="social-button" href="#" aria-label="Техномарт в Фейсбуке">Фейсбук</a></li>
+          <li><a class="social-button" href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a></li>
+        </ul>
+      </div>
 
-    <p class="feedback">
-      Обратная связь:
-      <a class="footer-link" href="#">mail@htmlacademy.ru</a>
-    </p>
+      <p class="feedback">
+        Обратная связь:
+        <a class="footer-link" href="#">mail@htmlacademy.ru</a>
+      </p>
 
-    <p class="developer">
-      Разработано —
-      <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-    </p>
+      <p class="developer">
+        Разработано —
+        <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      </p>
     </div>
   </footer>
 
 
-  <section>
+  <section class="modal modal-map">
     <h2 class="visually-hidden">«Техномарт» на карте</h2>
     <img src="img/content/map.png" width="940" height="446"
       alt="Офис магазина по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     <button type="button" aria-label="Закрыть">X</button>
   </section>
 
-  <section>
+  <section class="modal modal-message">
     <h2 class="visually-hidden">Написать в «Техномарт»</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
