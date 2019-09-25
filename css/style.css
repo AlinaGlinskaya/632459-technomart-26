@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
     font-weight: normal;
@@ -46,12 +46,32 @@ a.button {
     background-color: #ee3643;
 }
 
+a.button:hover, a.button:active {
+    background-color: #ca2c37;
+}
+
 .shop-contacts button {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
     background-color: #ee3643;
+}
+
+.service-item {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #32425c;
+    border: none;
+}
+
+.service-item:active {
+    color: #32425c;
+    background-color: #ffffff;
+    border: none;
 }
 
 .filter-button {
@@ -64,6 +84,38 @@ a.button {
 
 .social-button a:hover, .social-button a:focus, .social-button a:active {
     background-color: #ee3643
+}
+
+.credit button {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ee3643;
+    color: #ffffff;
+    border: none;
+}
+
+.credit button:hover, .credit button:active {
+    background-color: #ca2c37;
+}
+
+.sorting-btn {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #acaaa5;
+    border: none;
+    border-bottom: 1px dashed #ee3643;
+}
+
+.sorting-btn:active {
+    color: #ee3643;
+    border-bottom: none;
 }
 
 /* Хэдер */
@@ -81,11 +133,13 @@ a.button {
     opacity: 0;
 }
 
-.header-content {
+.company-info {
     background-color: #f3f7f8;
 }
 
-.header-text {
+.company-description {
+    font-size: 16px;
+    line-height: 23px;
     color: #ee434f;
     font-style: italic;
 }
@@ -93,6 +147,18 @@ a.button {
 .header-contacts p {
     font-size: 14px;
     line-height: 24px;
+}
+
+.site-navigation li:hover {
+    background-color: #293449;
+}
+
+.site-navigation li:active {
+    background-color: #293449;
+}
+
+.site-navigation a:active {
+    color: #9b9b9b;
 }
 
 /* Авторизация */
@@ -107,14 +173,17 @@ a.button {
     line-height: 21px;
     color: #000000;
     background-color: #ffffff;
+    border: none;
 }
 
 .login-button:hover, .login-button:focus {
     color: #ee3643;
+    border: none;
 }
 
 .login-button:active {
     color: #c5c5c5;
+    border: none;
 }
 
 .autorised>a {
@@ -151,7 +220,7 @@ a.button {
 .site-navigation {
     list-style: none;
     color: #ffffff;
-    background-color: #293449;
+    background-color: #32425c;
 }
 
 h1, h2 {
@@ -169,6 +238,27 @@ h1, h2 {
 .companies li {
     font-size: 18px;
     line-height: 20px;
+}
+
+.promo-item h3 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.slider h3 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider p {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 fieldset {
@@ -207,6 +297,57 @@ legend {
     text-transform: uppercase;
 }
 
+.popular-items ul {
+    list-style: none;
+}
+
+.popular-items h3 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.popular-items span {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.popular-producers ul {
+    list-style: none;
+}
+
+.service-list {
+    list-style: none;
+}
+
+.title {
+    background-color: #f9f5f0;
+}
+
+.catalog-title {
+    background-color: #f2f6f8;
+}
+
+.sorting ul {
+    list-style: none;
+}
+
+.filter h2, .sorting h2 {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.product-info {
+    background-color: #f2f6f8;
+}
+
+.pagination {
+    list-style: none;
+}
+
 /* Ссылки */
 
 .site-navigation a {
@@ -231,7 +372,7 @@ legend {
     color: #ffffff;
 }
 
-.footer-nav-2 a, .footer-link {
+.footer-nav-bottom a, .footer-link {
     color: #ffd180;
 }
 
@@ -251,8 +392,40 @@ legend {
     color: #ee3643;
 }
 
-.catalog-title {
-    background-color: #f2f6f8;
+.promo-item a {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #e5e5e5;
+    color: #ffffff;
+}
+
+.promo-item a:hover {
+    background-color: #cccccc;
+}
+
+.promo-item a:active {
+    background-color: #b2b2b2;
+}
+
+.pagination a {
+    font-size: 13px;
+    line-height: 18px;
+    border: 1px solid lightgray;
+}
+
+.pagination-current a {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.pagination a:hover {
+    border: 1px solid gray;
+}
+
+.pagination a:active {
+    border: 1px solid #ee3643;
 }
 
 /* Футер */
@@ -280,4 +453,10 @@ legend {
 
 .footer-social ul {
     list-style: none;
+}
+
+/*Всплывающие окна */
+
+.modal {
+    display: none;
 }
