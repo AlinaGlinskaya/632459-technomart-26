@@ -133,10 +133,6 @@ a.button:hover, a.button:active {
     opacity: 0;
 }
 
-.company-info {
-    background-color: #f3f7f8;
-}
-
 .company-description {
     font-size: 16px;
     line-height: 23px;
@@ -328,6 +324,13 @@ legend {
 
 .catalog-title {
     background-color: #f2f6f8;
+    margin: 0;
+    padding: 15px 30px;
+}
+
+.catalog-title h1 {
+    font-weight: normal;
+    color: #32425c;
 }
 
 .sorting ul {
@@ -459,4 +462,125 @@ legend {
 
 .modal {
     display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+/*Сеточные стили */
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main-header {
+    margin-bottom: 60px;
+}
+
+.inner-page .main-header {
+    margin-bottom: 0;
+}
+
+.main-nav {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.company-info {
+    display: flex;
+    height: 160px;
+    width: 960px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.header-buttons-wrapper {
+    width: 100%;
+    background-color: #293449;
+}
+
+.header-wrapper {
+    width: 100%;
+    background-color: #f3f7f8;
+    margin-top: -10px;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+}
+
+.product-info-wrapper {
+    width: 100%;
+    background-color: #f2f6f8;
+}
+
+.product-info {
+    padding: 60px 0;
+}
+
+.catalog-columns {
+    display: flex;
+}
+
+.sorting ul {
+    margin: 0;
+    padding: 0;
+}
+
+.models {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.model-item {
+    width: 220px;
+    margin-right: 20px;
+}
+
+.model-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.footer-top-wrapper {
+    width: 100%;
+    background-color: #32425c;
+}
+
+.footer-bottom-wrapper {
+    width: 100%;
+    background-color: #293449;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.footer-social {
+    margin: 0 auto;
+}
+
+.feedback {
+    margin-right: 40px;
 }
