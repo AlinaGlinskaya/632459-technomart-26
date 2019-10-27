@@ -4,10 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" 
-  rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" 
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
+   rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/minimize.css" rel="stylesheet">
 </head>
@@ -130,33 +128,28 @@
         <div class="promo-block-bottom">
           <article class="slider">
             <h2 class="visually-hidden">Дрели и перфораторы</h2>
-            <input class="visually-hidden" type="radio" name="slider-btn" id="button-previous" checked>
-            <input class="visually-hidden" type="radio" name="slider-btn" id="button-next">
+            
 
-            <ul class="slider-list">
-              <li class="slider-item slide-1">
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
+            <div class="slider-list">
+                <span class="slider-left-dir"></span>
+                <span class="slider-right-dir"></span>
+                <span class="first-slide-button"></span>
+                <span class="second-slide-button slide-active"></span>
 
-                <div class="slider-controls">
-                  <label for="button-previous"></label>
-                  <label for="button-next"></label>
+              <div class="slide-1">
+                  <h3>Перфораторы</h3>
+                    <p>Настоящие мужские игрушки</p>
+
+                    <a class="button" href="catalog.html">Открыть каталог</a>
+              </div>
+              <div class="slide-2 slide-show">
+
+                  <h3>Дрели</h3>
+                  <p>Соседям на радость!</p>
+                  <a class="button" href="catalog.html">Открыть каталог</a>
                 </div>
-                <a class="button" href="catalog.html">Открыть каталог</a>
 
-              </li>
-
-              <li class="slider-item slide-2">
-                <h3>Перфораторы
-                </h3>
-                <p>Настоящие мужские игрушки</p>
-                <div class="slider-controls">
-                  <label for="button-previous"></label>
-                  <label for="button-next"></label>
-                </div>
-                <a class="button" href="catalog.html">Открыть каталог</a>
-              </li>
-            </ul>
+            </div>
           </article>
 
 
@@ -508,7 +501,7 @@
       <button type="button" aria-label="Закрыть" class="close close-basket"></button>
   </section>
 
-  <script src="js/minimize.js">
+  <script src="js/script.js">
   </script>
 </body>
 
