@@ -80,6 +80,12 @@ if (link) {
     link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
+    if (storage) {
+        login.value = storage;
+        email.focus();
+      } else {
+    login.focus();
+      }
 });
 };
 
@@ -175,3 +181,41 @@ closeBasket.addEventListener("click", function (evt) {
     basket.classList.remove("modal-show");
 });
 };
+
+var login= popup.querySelector("[name=fullname]");
+
+var form = popup.querySelector("form");
+
+var email = popup.querySelector("[name=email]");
+
+var isStorageSupport = true;
+  var storage = "";
+  
+  try {
+    storage = localStorage.getItem("login");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+if (form) {
+form.addEventListener("submit", function (evt) {
+    if (!login.value || !email.value){
+    evt.preventDefault();
+    console.log("Нужно ввести имя и e-mail");
+    }
+    else {
+        if (isStorageSupport) {
+        localStorage.setItem("login", login.value);
+      }
+    }
+  });
+};
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
+  });
