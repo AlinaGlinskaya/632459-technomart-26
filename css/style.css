@@ -2521,17 +2521,23 @@ input[name="min-price"] {
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 33px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-top: 33px;
 }
 
 .user-info input {
-    width: 215px;
-    height: 33px;
+    width: 220px;
+    height: 37px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    margin-top: 1px;
+    padding: 0 10px;
+    box-sizing: border-box;;
+}
+
+.user-info p {
+    display: flex;
+    flex-direction: column;
 }
 
 .write-form label {
@@ -2539,23 +2545,24 @@ input[name="min-price"] {
 }
 
 .message-text {
-    margin-top: 7px;
+    margin-top: 5px;
 }
 
 .modal-message textarea {
-    width: 457px;
-    min-height: 112px;
+    width: 431px;
+    min-height: 97px;
     padding: 9px 13px;
+    margin-top: 5px;
 }
 
 .write-form {
-    width: 457px;
-    margin: 0 auto;
+    width: 460px;
+    margin-left: 82px;
 }
 
 .send-message {
     display: block;
-    width: 100%;
+    width: 459px;
     padding: 11px 0;
     background-color: #ee3643;
     color: #fff;
@@ -2565,8 +2572,7 @@ input[name="min-price"] {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    margin-top: 46px;
-    margin-bottom: 10px;
+    margin-top: 62px;
 }
 
 .send-message:hover {
@@ -2574,19 +2580,19 @@ input[name="min-price"] {
 }
 
 .user-info input::-webkit-input-placeholder {
-    padding-left: 13px;
+    padding-left: 8px;
 }
 
 .user-info input::-moz-placeholder {
-    padding-left: 13px;
+    padding-left: 8px;
 }
 
 .user-info input:-moz-placeholder {
-    padding-left: 13px;
+    padding-left: 8px;
 }
 
 .user-info input:-ms-input-placeholder {
-    padding-left: 13px;
+    padding-left: 8px;
 }
 
 .modal-show {
