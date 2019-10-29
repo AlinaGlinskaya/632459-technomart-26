@@ -4,8 +4,6 @@ var popup = document.querySelector(".modal-message");
 
 var close = document.querySelector(".close");
 
-var closeBasket = document.querySelector(".close-basket");
-
 var map = document.querySelector(".map");
 
 var mapLarge = document.querySelector(".modal-map");
@@ -37,81 +35,82 @@ var radioLeft = document.querySelector(".first-slide-button");
 var radioRight = document.querySelector(".second-slide-button");
 
 if (buttonLeft) {
-    buttonLeft.addEventListener("click", function (evt) {
+  buttonLeft.addEventListener("click", function (evt) {
     evt.preventDefault();
     sliderTwo.classList.remove("slide-show");
     sliderOne.classList.add("slide-show");
     radioLeft.classList.add("slide-active");
     radioRight.classList.remove("slide-active");
-});
+  });
 };
 
 if (buttonRight) {
-    buttonRight.addEventListener("click", function (evt) {
+  buttonRight.addEventListener("click", function (evt) {
     evt.preventDefault();
     sliderOne.classList.remove("slide-show");
     sliderTwo.classList.add("slide-show");
     radioRight.classList.add("slide-active");
     radioLeft.classList.remove("slide-active");
-});
+  });
 };
 
 if (radioLeft) {
-    radioLeft.addEventListener("click", function (evt) {
+  radioLeft.addEventListener("click", function (evt) {
     evt.preventDefault();
     sliderTwo.classList.remove("slide-show");
     sliderOne.classList.add("slide-show");
     radioRight.classList.remove("slide-active");
     radioLeft.classList.add("slide-active");
-});
+  });
 };
 
 if (radioRight) {
-    radioRight.addEventListener("click", function (evt) {
+  radioRight.addEventListener("click", function (evt) {
     evt.preventDefault();
     sliderOne.classList.remove("slide-show");
     sliderTwo.classList.add("slide-show");
     radioLeft.classList.remove("slide-active");
     radioRight.classList.add("slide-active");
-});
+  });
 };
 
 if (link) {
-    link.addEventListener("click", function (evt) {
+  link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
     if (storage) {
-        login.value = storage;
-        email.focus();
-      } else {
-    login.focus();
-      }
-});
+      login.value = storage;
+      email.focus();
+    } else {
+      login.focus();
+    }
+  });
 };
 
 if (close) {
-close.addEventListener("click", function (evt) {
+  close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
-});
+    popup.classList.remove("modal-error");
+  });
 };
 
 if (closeMap) {
-closeMap.addEventListener("click", function (evt) {
+  closeMap.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapLarge.classList.remove("modal-show");
-});
+  });
 };
 
 if (map) {
-map.addEventListener("click", function (evt) {
+  map.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapLarge.classList.add("modal-show");
-});
+  });
 };
 
 if (buttonDelivery && buttonGaranty && buttonCredit) {
-buttonDelivery.addEventListener("click", function (evt) {
+  buttonDelivery.addEventListener("click", function (evt) {
     evt.preventDefault();
     slideOne.classList.add("modal-show");
     slideTwo.classList.remove("modal-show");
@@ -119,10 +118,10 @@ buttonDelivery.addEventListener("click", function (evt) {
     buttonDelivery.classList.add("service-button-active");
     buttonGaranty.classList.remove("service-button-active");
     buttonCredit.classList.remove("service-button-active");
-});
+  });
 
 
-buttonGaranty.addEventListener("click", function (evt) {
+  buttonGaranty.addEventListener("click", function (evt) {
     evt.preventDefault();
     slideTwo.classList.add("modal-show");
     slideOne.classList.remove("modal-show");
@@ -130,9 +129,9 @@ buttonGaranty.addEventListener("click", function (evt) {
     buttonGaranty.classList.add("service-button-active");
     buttonDelivery.classList.remove("service-button-active");
     buttonCredit.classList.remove("service-button-active");
-});
+  });
 
-buttonCredit.addEventListener("click", function (evt) {
+  buttonCredit.addEventListener("click", function (evt) {
     evt.preventDefault();
     slideThree.classList.add("modal-show");
     slideTwo.classList.remove("modal-show");
@@ -140,10 +139,11 @@ buttonCredit.addEventListener("click", function (evt) {
     buttonCredit.classList.add("service-button-active");
     buttonDelivery.classList.remove("service-button-active");
     buttonGaranty.classList.remove("service-button-active");
-});
+  });
 };
 
 var basket = document.querySelector(".modal-basket");
+var closeBasket = basket.querySelector(".close-basket");
 
 var closeBasket = document.querySelector(".close-basket");
 
@@ -151,60 +151,60 @@ var buy = document.querySelectorAll(".buy");
 
 var bookmark = document.querySelectorAll(".bookmark");
 
-var markButton = document.querySelector(".button-marks");
+var markButton = document.querySelector(".marks");
 
-var cart = document.querySelector(".button-basket");
+var cart = document.querySelector(".basket");
 
 if (buy) {
-buy.forEach(function (buyButton) {
-    buyButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    basket.classList.add("modal-show");
-    cart.classList.add("product-add");
-    });
-    })
-    };
+  for (var i = 0; i < buy.length; i++) {
+  buy[i].addEventListener('click', function (evt) {
+  evt.preventDefault();
+  basket.classList.add("modal-show");
+  cart.classList.add("product-add");
+  });
+  };
+};
 
-    if (bookmark) {
-        bookmark.forEach(function (addMark) {
-            addMark.addEventListener('click', function (evt) {
-            evt.preventDefault();
-            markButton.classList.add("product-add");       
-            });
-            })
-            };
+if (bookmark) {
+  for (var i = 0; i < bookmark.length; i++) {
+  bookmark[i].addEventListener('click', function (evt) {
+  evt.preventDefault();
+  markButton.classList.add("product-add");
+  });
+  };
+};
 
 
 if (closeBasket) {
-closeBasket.addEventListener("click", function (evt) {
+  closeBasket.addEventListener("click", function (evt) {
     evt.preventDefault();
     basket.classList.remove("modal-show");
-});
+  });
 };
 
-var login= popup.querySelector("[name=fullname]");
+var login = popup.querySelector("[name=fullname]");
 
 var form = popup.querySelector("form");
 
 var email = popup.querySelector("[name=email]");
 
 var isStorageSupport = true;
-  var storage = "";
-  
-  try {
-    storage = localStorage.getItem("login");
-  } catch (err) {
-    isStorageSupport = false;
-  }
+var storage = "";
+
+try {
+  storage = localStorage.getItem("login");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 if (form) {
-form.addEventListener("submit", function (evt) {
-    if (!login.value || !email.value){
-    evt.preventDefault();
-    console.log("Нужно ввести имя и e-mail");
+  form.addEventListener("submit", function (evt) {
+    if (!login.value || !email.value) {
+      evt.preventDefault();
+      popup.classList.add("modal-error");
     }
     else {
-        if (isStorageSupport) {
+      if (isStorageSupport) {
         localStorage.setItem("login", login.value);
       }
     }
@@ -212,10 +212,11 @@ form.addEventListener("submit", function (evt) {
 };
 
 window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-      }
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("modal-show")) {
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
-  });
+  }
+});
